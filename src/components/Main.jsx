@@ -11,7 +11,7 @@ const Main = ({ selectedPunk, punkListData }) => {
 	const [activePunk, setActivePunk] = useState(punkListData[0]);
 
 	useEffect(() => {
-		setActivePunk(punkListData[selectedPunk]);
+		setActivePunk(punkListData.filter((everyPunk) => everyPunk.token_id == selectedPunk)[0]);
 	}, [punkListData, selectedPunk]);
 
 	return (
