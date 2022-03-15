@@ -1,17 +1,15 @@
 import React, { useEffect, useState } from "react";
 import "./main.css";
-// import OwnerImg from "../assets/owner/punkhead.png";
 import instagramLogo from "../assets/owner/instagram.png";
 import twitterLogo from "../assets/owner/twitter.png";
 import moreIcon from "../assets/owner/more.png";
-// import PunkList from "./PunkList";
 import getIpfsURL from "../utils";
 
 const Main = ({ selectedPunk, punkListData }) => {
 	const [activePunk, setActivePunk] = useState(punkListData[0]);
 
 	useEffect(() => {
-		setActivePunk(punkListData.filter((everyPunk) => everyPunk.token_id == selectedPunk)[0]);
+		setActivePunk(punkListData.filter((everyPunk) => everyPunk.token_id === selectedPunk)[0]);
 	}, [punkListData, selectedPunk]);
 
 	return (
