@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/nft-demo/static/css/main.785b2bda.css",
+    "main.js": "/nft-demo/static/js/main.344f0db8.js",
+    "static/js/787.c20165fc.chunk.js": "/nft-demo/static/js/787.c20165fc.chunk.js",
+    "static/media/weth.png": "/nft-demo/static/media/weth.4101f1dacb92484cfd3f.png",
+    "static/media/cryptopunk-logo.png": "/nft-demo/static/media/cryptopunk-logo.8bee49d57faa44bb66f5.png",
+    "index.html": "/nft-demo/index.html",
+    "main.785b2bda.css.map": "/nft-demo/static/css/main.785b2bda.css.map",
+    "main.344f0db8.js.map": "/nft-demo/static/js/main.344f0db8.js.map",
+    "787.c20165fc.chunk.js.map": "/nft-demo/static/js/787.c20165fc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.785b2bda.css",
+    "static/js/main.344f0db8.js"
+  ]
+}
