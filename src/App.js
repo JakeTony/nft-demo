@@ -16,11 +16,7 @@ function App() {
 	// useEffect will have empty dependencies
 	useEffect(() => {
 		const getMyNfts = async () => {
-			const openseaData = await axios.get("https://testnets-api.opensea.io/assets?asset_contract_address=0x88b11e35aD0104238AF00bb07DCC6A9C4aF8B484&order_direction=asc", {
-				headers: {
-					"Access-Control-Allow-Origin": "*",
-				},
-			});
+			const openseaData = await axios.get("https://testnets-api.opensea.io/assets?asset_contract_address=0x88b11e35aD0104238AF00bb07DCC6A9C4aF8B484&order_direction=asc");
 			// console.log(openseaData.data.assets);
 			setPunkListData(openseaData.data.assets);
 		};
