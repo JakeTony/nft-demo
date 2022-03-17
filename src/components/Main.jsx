@@ -9,7 +9,7 @@ const Main = ({ selectedPunk, punkListData }) => {
 	const [activePunk, setActivePunk] = useState(punkListData[0]);
 
 	useEffect(() => {
-		setActivePunk(punkListData.filter((everyPunk) => everyPunk.token_id === selectedPunk)[0]);
+		setActivePunk(punkListData.filter((everyPunk) => parseInt(everyPunk.token_id) === parseInt(selectedPunk))[0]);
 	}, [punkListData, selectedPunk]);
 
 	return (
